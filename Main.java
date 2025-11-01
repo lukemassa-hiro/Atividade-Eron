@@ -1,12 +1,19 @@
+import java.util.Scanner;
 
-public class Main {
+public class SomaSimples {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-        System.out.printf("Hello and welcome!");
+        System.out.print("Digite o valor de x: ");
+        int x = input.nextInt();
 
-        for (int i = 1; i <= 5; i++) {
+        System.out.print("Digite o valor de y: ");
+        int y = input.nextInt();
 
-            System.out.println("i = " + i);
-        }
+        int z = x + y;
+
+        System.out.println("A soma é: " + z);
+
+        input.close();
     }
 }
